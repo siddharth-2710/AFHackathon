@@ -83,4 +83,84 @@
 
     </div>
   </lightning-card>
+
+  <!-- Scorecard Modal -->
+  <template if:true={showModal}>
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+      <div class="slds-modal__container">
+        <header class="slds-modal__header" style="background:#16325c;">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                  onclick={closeModal} title="Close">
+            <lightning-icon icon-name="utility:close" size="small" alternative-text="Close"></lightning-icon>
+          </button>
+          <h2 class="slds-modal__title slds-hyphenate" style="color:#fff;font-size:1.1rem;">
+            Site Scorecard &mdash; {selectedSite.name}, {selectedSite.city}
+          </h2>
+        </header>
+        <div class="slds-modal__content slds-p-around_medium">
+          <div class="slds-grid slds-gutters slds-wrap">
+
+            <!-- Demand Score -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Demand Score</p>
+                <p class={scoreBadgeClass}>{selectedSite.demandScore} / 100</p>
+              </div>
+            </div>
+
+            <!-- Verdict -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Verdict</p>
+                <p class={verdictClass}>{selectedSite.siteRecommendation}</p>
+              </div>
+            </div>
+
+            <!-- Competition -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Competition Level</p>
+                <p class="scorecard-value">{selectedSite.competitorDensity}</p>
+                <p class="scorecard-sub">{selectedSite.nearestCompetitorDistanceM}m to nearest rival</p>
+              </div>
+            </div>
+
+            <!-- Revenue -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Est. Monthly Revenue</p>
+                <p class="scorecard-value">&#8377; {selectedSite.projectedRevenueFormatted}</p>
+              </div>
+            </div>
+
+            <!-- Setup Cost -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Setup Cost (CapEx)</p>
+                <p class="scorecard-value">&#8377; {selectedSite.estimatedSetupCostFormatted}</p>
+              </div>
+            </div>
+
+            <!-- Payback -->
+            <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+              <div class="scorecard-metric">
+                <p class="scorecard-label">Payback Period</p>
+                <p class="scorecard-value">{selectedSite.paybackPeriodYears} years</p>
+                <p class="scorecard-sub">Industry benchmark: 3–5 years</p>
+              </div>
+            </div>
+
+          </div>
+          <p style="font-size:0.75rem;color:#888;text-align:right;margin-top:0.5rem;">
+            Powered by Agentforce &bull; Scores computed by Salesforce Data Cloud
+          </p>
+        </div>
+        <footer class="slds-modal__footer">
+          <lightning-button label="Close" onclick={closeModal}></lightning-button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+
 </template>

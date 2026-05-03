@@ -1,0 +1,165 @@
+competitor_name,brand,city,latitude,longitude,distance_to_nearest_site_m,max_regional_competitors
+DMart Andheri,DMart,Mumbai,19.1158,72.8621,2800,28
+Reliance Smart Andheri,Reliance Smart,Mumbai,19.1161,72.8424,310,28
+Nature Basket Bandra,Nature Basket,Mumbai,19.0634,72.8323,180,28
+Reliance Fresh Kurla,Reliance Fresh,Mumbai,19.0789,72.8726,820,28
+Big Bazaar Borivali,Big Bazaar,Mumbai,19.2295,72.8492,670,28
+Hypercity Thane,Hypercity,Mumbai,19.1927,72.9772,1400,28
+Star Bazaar Malad,Star Bazaar,Mumbai,19.1795,72.8436,540,28
+DMart Ghatkopar,DMart,Mumbai,19.0892,72.908,950,28
+DMart Mulund,DMart,Mumbai,19.1679,72.9574,2200,28
+DMart Vashi,DMart,Mumbai,19.0821,73.0025,1900,28
+Reliance Smart Dadar,Reliance Smart,Mumbai,19.0227,72.851,240,28
+More Chembur,More Supermarket,Mumbai,19.0601,72.8945,1650,28
+Big Bazaar Goregaon,Big Bazaar,Mumbai,19.1736,72.85,780,28
+DMart Kandivali,DMart,Mumbai,19.1979,72.8219,1200,28
+Foodhall Santacruz,Foodhall,Mumbai,19.0871,72.8411,1100,28
+More Powai,More Supermarket,Mumbai,19.1225,72.9097,2100,28
+Reliance Fresh Juhu,Reliance Fresh,Mumbai,19.1081,72.8339,650,28
+Foodhall Lower Parel,Foodhall,Mumbai,18.9911,72.8258,420,28
+DMart Kharghar,DMart,Mumbai,19.0527,73.0705,3100,28
+Big Bazaar Mira Rd,Big Bazaar,Mumbai,19.2871,72.875,2600,28
+DMart Dombivli,DMart,Mumbai,19.2216,73.0812,3400,28
+Reliance Fresh Vikhr,Reliance Fresh,Mumbai,19.101,72.9242,1800,28
+Big Bazaar CP,Big Bazaar,Delhi,28.6248,77.2124,280,24
+Reliance Smart LN,Reliance Smart,Delhi,28.5608,77.2396,1150,24
+DMart Karol Bagh,DMart,Delhi,28.6536,77.1885,420,24
+Easyday Saket,Easyday,Delhi,28.5253,77.2149,1800,24
+Star Bazaar Rajouri,Star Bazaar,Delhi,28.6451,77.1273,760,24
+DMart Dwarka,DMart,Delhi,28.5757,77.0506,3200,24
+DMart Rohini,DMart,Delhi,28.7143,77.1362,2800,24
+Big Bazaar Janakpuri,Big Bazaar,Delhi,28.6232,77.085,1100,24
+Reliance Smart NP,Reliance Smart,Delhi,28.5569,77.2541,980,24
+DMart Vasant Kunj,DMart,Delhi,28.5222,77.1597,2400,24
+DMart Gurgaon,DMart,Delhi,28.4755,77.0744,1600,24
+Big Bazaar Noida,Big Bazaar,Delhi,28.5629,77.3136,980,24
+Reliance Fresh GCH,Reliance Fresh,Delhi,28.4918,77.0854,2200,24
+DMart Faridabad,DMart,Delhi,28.4043,77.3249,2800,24
+Big Bazaar Gzb,Big Bazaar,Delhi,28.5415,77.2819,1400,24
+Reliance Smart Pit,Reliance Smart,Delhi,28.7039,77.1383,870,24
+DMart Laxmi Nagar,DMart,Delhi,28.6399,77.2777,560,24
+Nature's Basket GP,Nature Basket,Delhi,28.5539,77.2028,3200,24
+Easyday Vikaspuri,Easyday,Delhi,28.6427,77.0659,2100,24
+Reliance Fresh SN,Reliance Fresh,Delhi,28.5765,77.2016,680,24
+More Koramangala,More Supermarket,Bangalore,12.9336,77.62,1600,22
+Reliance Fresh HSR,Reliance Fresh,Bangalore,12.9196,77.6391,2100,22
+Star Bazaar Indir.,Star Bazaar,Bangalore,12.9719,77.6336,720,22
+DMart Whitefield,DMart,Bangalore,12.9636,77.7519,3800,22
+Big Bazaar Jayanagar,Big Bazaar,Bangalore,12.9355,77.5819,980,22
+More Marathahalli,More Supermarket,Bangalore,12.9521,77.6955,860,22
+Reliance Fresh EC,Reliance Fresh,Bangalore,12.8537,77.6618,1600,22
+Food World MG,Food World,Bangalore,12.9832,77.6154,210,22
+DMart Malleswaram,DMart,Bangalore,12.9954,77.5733,2900,22
+Reliance Fresh Bell.,Reliance Fresh,Bangalore,12.929,77.6789,2400,22
+DMart Bannerghatta,DMart,Bangalore,12.9133,77.6016,1800,22
+Big Bazaar JP Nagar,Big Bazaar,Bangalore,12.9008,77.5826,1400,22
+More Hebbal,More Supermarket,Bangalore,13.0351,77.6043,2200,22
+DMart Yelahanka,DMart,Bangalore,13.1067,77.5925,3600,22
+Reliance Smart Raj.,Reliance Smart,Bangalore,12.9912,77.5461,1100,22
+DMart Kengeri,DMart,Bangalore,12.9156,77.4945,4200,22
+More BTM,More Supermarket,Bangalore,12.9135,77.6123,1300,22
+Reliance Fresh Bom.,Reliance Fresh,Bangalore,12.901,77.6337,2900,22
+Ratnadeep BH,Ratnadeep,Hyderabad,17.4198,78.4353,1100,18
+Big Bazaar JH,Big Bazaar,Hyderabad,17.437,78.4076,890,18
+More Kondapur,More Supermarket,Hyderabad,17.462,78.3605,2700,18
+Big Bazaar Secbad,Big Bazaar,Hyderabad,17.4322,78.5052,1400,18
+DMart Kukatpally,DMart,Hyderabad,17.501,78.4049,2100,18
+Ratnadeep HITEC,Ratnadeep,Hyderabad,17.4404,78.3701,1600,18
+DMart Miyapur,DMart,Hyderabad,17.5033,78.3617,2400,18
+Big Bazaar LBN,Big Bazaar,Hyderabad,17.3408,78.5526,1800,18
+Reliance Smart Amer.,Reliance Smart,Hyderabad,17.4274,78.4524,680,18
+Ratnadeep Dilsukh.,Ratnadeep,Hyderabad,17.3729,78.5188,820,18
+DMart Kompally,DMart,Hyderabad,17.5396,78.4808,3800,18
+More Uppal,More Supermarket,Hyderabad,17.4012,78.565,2600,18
+Spencer's T Nagar,Spencer's,Chennai,13.0406,80.2295,460,16
+Reliance Fresh AN,Reliance Fresh,Chennai,13.0856,80.2138,1300,16
+Big Bazaar Velachery,Big Bazaar,Chennai,12.9767,80.215,1900,16
+Auchan Nungambakkam,Auchan,Chennai,13.0648,80.2449,820,16
+DMart Adyar,DMart,Chennai,13.0002,80.2568,2300,16
+Star Bazaar Tambaram,Star Bazaar,Chennai,12.9188,80.0956,2100,16
+Reliance Fresh OMR,Reliance Fresh,Chennai,12.96,80.2471,2800,16
+DMart Porur,DMart,Chennai,13.0339,80.1529,1700,16
+More Choolaimedu,More Supermarket,Chennai,13.0604,80.2265,1100,16
+Reliance Fresh Guin.,Reliance Fresh,Chennai,13.0024,80.2271,2400,16
+DMart Sholing.,DMart,Chennai,12.9068,80.221,3200,16
+Spencer's Royap.,Spencer's,Chennai,13.0527,80.2654,580,16
+Big Bazaar FC Road,Big Bazaar,Pune,18.527,73.8387,720,14
+Dorabjees KP,Dorabjees,Pune,18.5432,73.894,1500,14
+Reliance Smart Hinj.,Reliance Smart,Pune,18.591,73.7426,3900,14
+More Kothrud,More Supermarket,Pune,18.5123,73.8027,1600,14
+Star Bazaar VN,Star Bazaar,Pune,18.5615,73.9132,1100,14
+DMart Aundh,DMart,Pune,18.5572,73.807,1400,14
+Reliance Fresh Had.,Reliance Fresh,Pune,18.5126,73.9288,2200,14
+DMart Wakad,DMart,Pune,18.6062,73.7577,2800,14
+Reliance Smart PS,Reliance Smart,Pune,18.6074,73.8068,3100,14
+Big Bazaar Katraj,Big Bazaar,Pune,18.4589,73.8588,2600,14
+DMart SG Highway,DMart,Ahmedabad,23.0175,72.5089,1800,16
+Big Bazaar Satellite,Big Bazaar,Ahmedabad,23.0246,72.5266,960,16
+Reliance Smart NRP,Reliance Smart,Ahmedabad,23.0355,72.5585,1400,16
+DMart Vastrapur,DMart,Ahmedabad,23.0371,72.5328,2200,16
+Reliance Smart Bopal,Reliance Smart,Ahmedabad,23.0291,72.4614,3600,16
+DMart Maninagar,DMart,Ahmedabad,23.0069,72.6117,820,16
+More Thaltej,More Supermarket,Ahmedabad,23.0679,72.5222,2800,16
+Reliance Fresh Nar.,Reliance Fresh,Ahmedabad,23.0967,72.6391,2400,16
+DMart Chandkheda,DMart,Ahmedabad,23.1083,72.5826,3200,16
+Big Bazaar Iskon,Big Bazaar,Ahmedabad,23.0265,72.5001,1200,16
+Big Bazaar MN,Big Bazaar,Jaipur,26.8486,75.8113,3200,10
+Reliance Smart CS,Reliance Smart,Jaipur,26.9086,75.7918,1050,10
+DMart Vaishali,DMart,Jaipur,26.9147,75.7373,2600,10
+More Mansarovar,More Supermarket,Jaipur,26.8603,75.7646,1800,10
+Big Bazaar RP,Big Bazaar,Jaipur,26.9089,75.8148,540,10
+Reliance Smart SC,Reliance Smart,Jaipur,26.9069,75.7836,380,10
+Star Bazaar Tonk,Star Bazaar,Jaipur,26.876,75.8073,1200,10
+Easyday Bani Park,Easyday,Jaipur,26.9174,75.8007,1700,10
+DMart Chitrakoot,DMart,Jaipur,26.8977,75.7541,3800,10
+Reliance Fresh Jag.,Reliance Fresh,Jaipur,26.8312,75.8478,4200,10
+Spencer's Park St,Spencer's,Kolkata,22.5464,88.3589,380,12
+Big Bazaar NT,Big Bazaar,Kolkata,22.5791,88.4645,2600,12
+Reliance Smart SL,Reliance Smart,Kolkata,22.5712,88.4377,1400,12
+More Gariahat,More Supermarket,Kolkata,22.5116,88.362,680,12
+Reliance Fresh Beh.,Reliance Fresh,Kolkata,22.5072,88.3169,1800,12
+Spencer's Ballygunge,Spencer's,Kolkata,22.5237,88.3699,820,12
+Big Bazaar Tolly.,Big Bazaar,Kolkata,22.4945,88.3439,1100,12
+Reliance Smart DD,Reliance Smart,Kolkata,22.6354,88.436,2200,12
+Big Bazaar Esplan.,Big Bazaar,Kolkata,22.562,88.3547,240,12
+Reliance Fresh How.,Reliance Fresh,Kolkata,22.5808,88.3249,960,12
+DMart Ring Road,DMart,Surat,21.1729,72.8279,1200,10
+Big Bazaar Athwa,Big Bazaar,Surat,21.1673,72.7982,960,10
+Reliance Smart Vesu,Reliance Smart,Surat,21.1394,72.7819,2800,10
+DMart Adajan,DMart,Surat,21.2223,72.8035,1800,10
+More Kapodra,More Supermarket,Surat,21.2072,72.8414,3200,10
+Reliance Fresh Pipl.,Reliance Fresh,Surat,21.1572,72.7949,3600,10
+Big Bazaar Kat.,Big Bazaar,Surat,21.2292,72.8552,820,10
+DMart Bhatar,DMart,Surat,21.1879,72.8228,2900,10
+Big Bazaar Hazrat.,Big Bazaar,Lucknow,26.852,80.9495,680,8
+DMart Gomti,DMart,Lucknow,26.8611,81.0092,1600,8
+Reliance Fresh Alam.,Reliance Fresh,Lucknow,26.8114,80.8987,2200,8
+DMart Aliganj,DMart,Lucknow,26.8952,80.9531,2800,8
+Big Bazaar Indir.,Big Bazaar,Lucknow,26.877,81.017,1400,8
+More Rajajipuram,More Supermarket,Lucknow,26.8519,80.8761,3400,8
+Reliance Smart VK,Reliance Smart,Lucknow,26.8487,80.9979,2000,8
+DMart Mahanagar,DMart,Lucknow,26.872,80.9567,2600,8
+Big Bazaar Dharam.,Big Bazaar,Nagpur,21.1493,79.0835,820,8
+Reliance Smart Sit.,Reliance Smart,Nagpur,21.1518,79.0782,480,8
+DMart Amravati,DMart,Nagpur,21.1667,79.1395,2400,8
+More Manish,More Supermarket,Nagpur,21.1243,79.0691,2800,8
+Reliance Fresh Ward.,Reliance Fresh,Nagpur,21.1072,79.0539,3200,8
+DMart Hingna,DMart,Nagpur,21.1251,78.9915,4800,8
+Big Bazaar Sec 17,Big Bazaar,Chandigarh,30.7428,76.7804,480,6
+Reliance Smart S22,Reliance Smart,Chandigarh,30.7377,76.7802,680,6
+DMart Industrial,DMart,Chandigarh,30.7063,76.7931,2400,6
+More Sector 35,More Supermarket,Chandigarh,30.7189,76.7804,3200,6
+DMart Mohali,DMart,Chandigarh,30.726,76.7292,2800,6
+Reliance Fresh Mani.,Reliance Fresh,Chandigarh,30.7355,76.8441,3600,6
+Big Bazaar MG Road,Big Bazaar,Kochi,9.9766,76.2937,540,6
+Lulu Hypermarket,Lulu,Kochi,10.0239,76.3134,1200,6
+DMart Kakkanad,DMart,Kochi,10.0204,76.3632,2400,6
+More Vytilla,More Supermarket,Kochi,9.9644,76.3079,1800,6
+Reliance Fresh Trip.,Reliance Fresh,Kochi,9.9426,76.3453,2600,6
+DMart Aluva,DMart,Kochi,10.1053,76.3581,3400,6
+Big Bazaar MG,Big Bazaar,Indore,22.7181,75.8596,680,8
+DMart Vijay Nagar,DMart,Indore,22.7474,75.9005,1400,8
+Reliance Smart Pal.,Reliance Smart,Indore,22.7365,75.8875,1100,8
+More Scheme 54,More Supermarket,Indore,22.7495,75.89,2600,8
+Reliance Fresh Bang.,Reliance Fresh,Indore,22.6943,75.8624,2200,8
+DMart Super Corr.,DMart,Indore,22.7886,75.9038,4200,8

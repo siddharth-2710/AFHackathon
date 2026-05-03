@@ -1,0 +1,165 @@
+location_name,city,population_density_per_sqkm,annual_growth_rate_pct,purchasing_power_index,median_household_income_inr
+Marol Naka,Mumbai,39000,3.1,76,87000
+Andheri East SV Rd,Mumbai,48000,3.5,82,94000
+Bandra West LR,Mumbai,56000,4.2,94,122000
+Kurla West Jn,Mumbai,40000,2.9,66,73000
+Borivali West STn,Mumbai,33000,4.3,72,80000
+Thane Naupada,Mumbai,28000,4.9,70,78000
+Malad Inorbit Area,Mumbai,36000,3.8,80,90000
+Ghatkopar East,Mumbai,38000,3.2,75,82000
+Mulund West,Mumbai,27000,4.0,68,75000
+Navi Mumbai Vashi,Mumbai,25000,5.8,74,84000
+Dadar TT Circle,Mumbai,62000,2.4,83,96000
+Chembur Colony,Mumbai,34000,2.8,71,79000
+Goregaon East Hub,Mumbai,31000,4.1,77,86000
+Kandivali West,Mumbai,30000,3.9,73,81000
+Santacruz West,Mumbai,47000,3.3,86,98000
+Powai Hiranandani,Mumbai,29000,6.2,89,108000
+Juhu Vile Parle,Mumbai,44000,3.0,91,115000
+Lower Parel Worli,Mumbai,50000,3.6,92,118000
+Kharghar Sector 7,Mumbai,21000,6.8,69,77000
+Mira Road East,Mumbai,24000,5.4,67,74000
+Dombivli East,Mumbai,22000,4.6,64,71000
+Vikhroli Parksite,Mumbai,28000,3.5,68,76000
+Connaught Place,Delhi,60000,2.1,96,128000
+Lajpat Nagar Mkt,Delhi,46000,2.5,82,98000
+Karol Bagh Main,Delhi,52000,2.3,80,96000
+Saket Select CW,Delhi,40000,3.9,90,114000
+Rajouri Garden,Delhi,44000,3.2,77,90000
+Dwarka Sector 10,Delhi,29000,5.3,72,85000
+Rohini Sector 7,Delhi,34000,4.7,69,81000
+Janakpuri DC,Delhi,40000,3.4,75,88000
+Nehru Place,Delhi,48000,2.8,86,102000
+Vasant Kunj,Delhi,38000,5.0,88,108000
+Gurgaon Sector 29,Delhi,38000,7.2,94,126000
+Noida Sector 18,Delhi,36000,6.8,88,112000
+Gurgaon Cyber City,Delhi,28000,8.4,96,132000
+Faridabad NIT,Delhi,26000,4.1,68,78000
+Ghaziabad Indirap.,Delhi,32000,5.6,72,84000
+Pitampura TV Tower,Delhi,38000,3.3,76,89000
+Laxmi Nagar,Delhi,42000,2.6,74,86000
+Green Park Extn,Delhi,32000,3.8,84,104000
+Vikaspuri Ring Rd,Delhi,31000,4.2,71,83000
+Sarojini Nagar,Delhi,46000,2.2,81,96000
+Koramangala 5th Blk,Bangalore,42000,6.4,89,110000
+HSR Layout Sec 2,Bangalore,36000,7.2,85,104000
+Indiranagar 100ft,Bangalore,46000,5.9,93,118000
+Whitefield Main Rd,Bangalore,28000,8.6,81,98000
+Jayanagar 4th Block,Bangalore,39000,4.4,84,101000
+Marathahalli Bridge,Bangalore,34000,7.8,83,99000
+Electronic City P1,Bangalore,24000,9.4,76,91000
+MG Road Brigade Jn,Bangalore,54000,4.8,95,124000
+Malleswaram Circle,Bangalore,40000,4.0,84,102000
+Bellandur Lake Rd,Bangalore,28000,9.0,79,95000
+Bannerghatta Rd,Bangalore,32000,6.2,78,93000
+JP Nagar 7th Phase,Bangalore,30000,5.8,76,90000
+Hebbal Flyover,Bangalore,34000,6.8,80,96000
+Yelahanka New Town,Bangalore,22000,8.2,72,87000
+Rajajinagar 2nd Blk,Bangalore,36000,3.9,82,99000
+Kengeri Satellite,Bangalore,20000,7.4,68,82000
+BTM Layout 2nd Stg,Bangalore,38000,6.6,83,100000
+Bommanahalli Ring,Bangalore,26000,8.8,74,89000
+Banjara Hills Rd12,Hyderabad,36000,6.6,88,106000
+Jubilee Hills Check,Hyderabad,38000,6.1,91,114000
+Kondapur Main Rd,Hyderabad,30000,8.3,83,99000
+Secunderabad West,Hyderabad,40000,3.8,78,90000
+Kukatpally HB Col.,Hyderabad,32000,7.0,76,88000
+HITEC City Phase 2,Hyderabad,30000,9.2,89,112000
+Miyapur X-Roads,Hyderabad,28000,6.8,74,86000
+LB Nagar Junction,Hyderabad,26000,4.2,70,82000
+Ameerpet Metro,Hyderabad,44000,4.6,82,98000
+Dilsukhnagar Mkt,Hyderabad,34000,3.9,73,85000
+Kompally Main Rd,Hyderabad,22000,7.6,68,80000
+Uppal Ring Road,Hyderabad,24000,5.8,71,83000
+T Nagar Pondy Baz,Chennai,50000,3.0,86,100000
+Anna Nagar 2nd Ave,Chennai,40000,3.3,83,96000
+Velachery Main Rd,Chennai,30000,4.8,76,87000
+Nungambakkam HR,Chennai,44000,2.7,88,103000
+Adyar Depot Jn,Chennai,34000,3.9,80,91000
+Tambaram West,Chennai,22000,5.5,69,74000
+OMR Perungudi,Chennai,26000,7.2,79,93000
+Porur Junction,Chennai,28000,4.6,74,85000
+Choolaimedu,Chennai,42000,2.8,80,94000
+Guindy Industrial,Chennai,24000,4.1,72,83000
+Sholinganallur,Chennai,26000,6.8,76,89000
+Royapettah,Chennai,46000,2.4,82,97000
+FC Road Shivajinagar,Pune,38000,5.2,86,101000
+Koregaon Park Lane5,Pune,34000,6.4,90,109000
+Hinjewadi Phase 1,Pune,22000,10.4,81,96000
+Kothrud Depot,Pune,30000,4.7,80,93000
+Viman Nagar Main,Pune,28000,7.6,84,100000
+Aundh ITI Road,Pune,32000,6.8,83,98000
+Hadapsar Magarpatta,Pune,28000,7.2,78,92000
+Wakad Hinjewadi Rd,Pune,24000,8.6,76,89000
+Pimple Saudagar,Pune,22000,7.8,74,86000
+Katraj Satara Rd,Pune,20000,4.4,68,79000
+SG Hwy Prahlad Ngr,Ahmedabad,36000,6.0,79,90000
+Satellite CG Road,Ahmedabad,38000,5.4,82,94000
+Navrangpura LG,Ahmedabad,28000,4.8,78,88000
+Vastrapur Lake,Ahmedabad,26000,6.2,80,92000
+Bopal Ambli Rd,Ahmedabad,20000,8.4,74,84000
+Maninagar Market,Ahmedabad,34000,3.8,72,82000
+Thaltej Cross Rd,Ahmedabad,24000,7.2,76,87000
+Naroda GIDC,Ahmedabad,18000,4.6,66,74000
+Chandkheda Circle,Ahmedabad,22000,6.8,70,80000
+Iskon Temple Road,Ahmedabad,30000,5.6,78,89000
+Malviya Nagar Cross,Jaipur,18000,4.2,72,70000
+C-Scheme Central,Jaipur,22000,3.7,81,80000
+Vaishali Nagar W,Jaipur,17000,5.4,74,73000
+Mansarovar Sec 5,Jaipur,20000,5.0,71,71000
+Raja Park Market,Jaipur,24000,3.5,78,76000
+Sindhi Camp,Jaipur,28000,2.9,79,77000
+Tonk Road JLN,Jaipur,20000,4.3,75,74000
+Bani Park,Jaipur,18000,4.0,77,75000
+Chitrakoot Nagar,Jaipur,16000,4.8,69,68000
+Jagatpura Main Rd,Jaipur,15000,5.6,66,66000
+Park Street Area,Kolkata,48000,2.2,76,86000
+New Town Rajarhat,Kolkata,28000,7.4,74,84000
+Salt Lake Sec 5,Kolkata,32000,4.8,78,90000
+Gariahat Market,Kolkata,44000,2.4,74,84000
+Behala Chowrasta,Kolkata,34000,2.6,66,74000
+Ballygunge Circ,Kolkata,42000,2.3,79,92000
+Tollygunge Metro,Kolkata,36000,2.8,70,80000
+Dum Dum Metro,Kolkata,28000,3.4,66,75000
+Esplanade Centre,Kolkata,52000,2.0,72,82000
+Howrah Maidan,Kolkata,40000,2.2,68,78000
+Ring Road Surat,Surat,32000,5.2,80,90000
+Athwa Lines,Surat,28000,5.0,78,88000
+Vesu Main Road,Surat,22000,7.2,74,84000
+Adajan Patia,Surat,26000,6.4,76,86000
+Kapodra Cross Rd,Surat,20000,5.8,71,80000
+Piplod VR Nagar,Surat,18000,6.6,72,82000
+Katargam Darwaja,Surat,30000,4.8,73,83000
+Bhatar Road,Surat,18000,5.6,70,79000
+Hazratganj Market,Lucknow,28000,3.9,70,72000
+Gomti Nagar Vipinam,Lucknow,26000,5.4,70,72000
+Alambagh Bus Stand,Lucknow,22000,3.6,64,66000
+Aliganj Sector C,Lucknow,24000,4.2,66,68000
+Indiranagar LC,Lucknow,26000,5.2,67,70000
+Rajajipuram,Lucknow,18000,3.4,62,64000
+Vibhuti Khand,Lucknow,24000,5.8,68,70000
+Mahanagar Colony,Lucknow,22000,4.0,64,66000
+Dharampeth Square,Nagpur,24000,3.4,70,73000
+Sitabuldi Main Rd,Nagpur,28000,2.8,70,73000
+Amravati Road,Nagpur,20000,4.2,66,69000
+Manish Nagar,Nagpur,18000,3.8,65,68000
+Wardha Road Khamla,Nagpur,20000,4.6,64,67000
+Hingna TI Chowk,Nagpur,15000,5.2,62,65000
+Sector 17 Plaza,Chandigarh,30000,3.0,88,106000
+Sector 22 Market,Chandigarh,28000,2.8,86,104000
+Elante Mall Area,Chandigarh,32000,4.2,89,108000
+Sector 35 B,Chandigarh,24000,3.4,83,100000
+Mohali Phase 7,Chandigarh,24000,6.8,80,96000
+Manimajra,Chandigarh,20000,3.8,78,94000
+MG Road Junction,Kochi,36000,3.5,83,97000
+Edapally Junction,Kochi,34000,4.8,81,95000
+Kakkanad Infocity,Kochi,28000,7.2,79,93000
+Vytilla Hub,Kochi,30000,4.2,80,94000
+Thrippunithura,Kochi,22000,3.6,76,88000
+Aluva North,Kochi,20000,5.6,74,86000
+MG Road Indore,Indore,28000,4.8,72,75000
+Vijay Nagar Square,Indore,26000,5.6,72,75000
+Palasia,Indore,24000,4.2,70,73000
+Scheme 54 PU4,Indore,20000,5.8,69,72000
+Banganga Square,Indore,22000,3.8,67,70000
+Super Corridor,Indore,18000,8.4,68,72000

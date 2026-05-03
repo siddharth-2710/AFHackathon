@@ -11,3 +11,17 @@
 .kpi-number  { font-size: 2rem; font-weight: 500; margin: 0 0 4px; color: #16325c; }
 .kpi-label   { font-size: 0.8rem; font-weight: 500; margin: 0; color: #444; }
 .kpi-sub     { font-size: 0.72rem; margin: 2px 0 0; color: #777; }
+
+/* Scorecard modal */
+.scorecard-metric  { background: #f4f6f9; border-radius: 6px; padding: 12px 14px; height: 100%; }
+.scorecard-label   { font-size: 0.75rem; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 4px; }
+.scorecard-value   { font-size: 1.2rem; font-weight: 500; color: #16325c; margin: 0 0 2px; }
+.scorecard-sub     { font-size: 0.72rem; color: #888; margin: 0; }
+.scorecard-score   { font-size: 1.6rem; font-weight: 700; margin: 0; }
+.scorecard-verdict { font-size: 1.1rem; font-weight: 700; margin: 0; padding: 4px 10px; border-radius: 4px; display: inline-block; }
+.score-high    { color: #0f6e56; }
+.score-mid     { color: #854f0b; }
+.score-low     { color: #a32d2d; }
+.verdict-green { background: #e1f5ee; color: #0f6e56; }
+.verdict-amber { background: #faeeda; color: #854f0b; }
+.verdict-red   { background: #fde8e8; color: #a32d2d; }

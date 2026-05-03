@@ -1,5 +1,7 @@
 import { LightningElement, api, wire, track } from 'lwc';
 import { loadScript } from 'lightning/platformResourceLoader';
+import { refreshApex } from '@salesforce/apex';
+import chartjs from '@salesforce/resourceUrl/ChartJs';
 import getProposedSites from '@salesforce/apex/ExpansionDashboardController.getProposedSites';
 
 const COLUMNS = [
@@ -33,11 +35,14 @@ export default class ExpansionDashboard extends LightningElement {
     @track minScore = 0;
     @track sortBy = 'demandScore';
     @track sortDirection = 'desc';
+    @track showModal = false;
+    @track selectedSite = {};
 
     @api chartTitle = 'Store Expansion Intelligence';
     columns = COLUMNS;
     chartLoaded = false;
     chartInstance = null;
+    _canvasClickHandler = null;
 
     cityOptions = [
         { label: 'All cities',  value: 'All'       },
@@ -75,9 +80,6 @@ export default class ExpansionDashboard extends LightningElement {
         const sites = this.filteredSites;
         const highDemand = sites.filter(s => (s.demandScore || 0) >= 70).length;
         const blindSpots = sites.filter(s => (s.demandScore || 0) >= 65 && s.competitorDensity === 'Low').length;
-        const avgScore = sites.length > 0
-            ? (sites.reduce((a, b) => a + (b.demandScore || 0), 0) / sites.length).toFixed(1)
-            : '—';
         const topRev = sites.length > 0
             ? Math.max(...sites.map(s => s.projectedRevenue || 0))
             : 0;
@@ -89,19 +91,22 @@ export default class ExpansionDashboard extends LightningElement {
         ];
     }
 
+    wiredSitesResult;
+
     @wire(getProposedSites)
-    wiredSites({ data, error }) {
+    wiredSites(result) {
+        this.wiredSitesResult = result;
         this.isLoading = false;
-        if (data) {
-            this.allSites = data;
+        if (result.data) {
+            this.allSites = result.data;
             this.renderChart();
-        } else if (error) {
-            console.error('Error loading sites', error);
+        } else if (result.error) {
+            console.error('Error loading sites', result.error);
         }
     }
 
     connectedCallback() {
-        loadScript(this, 'https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js')
+        loadScript(this, chartjs)
             .then(() => { this.chartLoaded = true; this.renderChart(); })
             .catch(e => console.error('Chart.js load error', e));
     }
@@ -111,13 +116,17 @@ export default class ExpansionDashboard extends LightningElement {
         const canvas = this.refs.chartCanvas;
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
+
         if (this.chartInstance) { this.chartInstance.destroy(); this.chartInstance = null; }
+        if (this._canvasClickHandler) {
+            canvas.removeEventListener('click', this._canvasClickHandler);
+            this._canvasClickHandler = null;
+        }
 
         const sites = this.filteredSites;
         const maxRev = Math.max(...sites.map(s => s.projectedRevenue || 1));
 
-        /* global Chart */
-        this.chartInstance = new Chart(ctx, {
+        this.chartInstance = new window.Chart(ctx, {
             type: 'bubble',
             data: {
                 datasets: [{
@@ -133,15 +142,21 @@ export default class ExpansionDashboard extends LightningElement {
                     })),
                     backgroundColor: sites.map(s => COLOR_MAP[s.competitorDensity] || '#88878080'),
                     borderColor:     sites.map(s => BORDER_MAP[s.competitorDensity] || '#888780'),
-                    borderWidth: 1.5
+                    borderWidth: 1.5,
+                    hoverBorderWidth: 2.5
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                interaction: {
+                    mode: 'nearest',
+                    intersect: true
+                },
                 plugins: {
                     legend: { display: false },
                     tooltip: {
+                        enabled: true,
                         callbacks: {
                             title: (items) => items[0].raw.name + ', ' + items[0].raw.city,
                             label: (item) => [
@@ -152,6 +167,9 @@ export default class ExpansionDashboard extends LightningElement {
                             ]
                         }
                     }
+                },
+                onHover: (_evt, elements) => {
+                    canvas.style.cursor = elements.length ? 'pointer' : 'default';
                 },
                 scales: {
                     x: {
@@ -167,6 +185,20 @@ export default class ExpansionDashboard extends LightningElement {
                 }
             }
         });
+
+        this._canvasClickHandler = (evt) => {
+            const points = this.chartInstance.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
+            if (!points.length) return;
+            const site = this.filteredSites[points[0].index];
+            if (!site) return;
+            this.selectedSite = {
+                ...site,
+                projectedRevenueFormatted:   site.projectedRevenue   ? site.projectedRevenue.toLocaleString('en-IN')   : '—',
+                estimatedSetupCostFormatted: site.estimatedSetupCost ? site.estimatedSetupCost.toLocaleString('en-IN') : '—'
+            };
+            this.showModal = true;
+        };
+        canvas.addEventListener('click', this._canvasClickHandler);
     }
 
     handleCityChange(e)        { this.selectedCity        = e.detail.value; this.renderChart(); }
@@ -175,12 +207,35 @@ export default class ExpansionDashboard extends LightningElement {
     handleSort(e)              { this.sortBy = e.detail.fieldName; this.sortDirection = e.detail.sortDirection; }
 
     refreshData() {
-        this.isLoading = true;
-        this.allSites = [];
+        refreshApex(this.wiredSitesResult);
     }
 
     handleRowAction(e) {
         const row = e.detail.row;
-        this.dispatchEvent(new CustomEvent('scorecard', { detail: row }));
+        if (e.detail.action.name === 'scorecard') {
+            this.selectedSite = {
+                ...row,
+                projectedRevenueFormatted:    row.projectedRevenue   ? row.projectedRevenue.toLocaleString('en-IN')   : '—',
+                estimatedSetupCostFormatted:  row.estimatedSetupCost ? row.estimatedSetupCost.toLocaleString('en-IN') : '—'
+            };
+            this.showModal = true;
+        }
+    }
+
+    closeModal() {
+        this.showModal = false;
+        this.selectedSite = {};
+    }
+
+    get scoreBadgeClass() {
+        const s = this.selectedSite.demandScore || 0;
+        return s >= 33 ? 'scorecard-score score-high' : s >= 25 ? 'scorecard-score score-mid' : 'scorecard-score score-low';
+    }
+
+    get verdictClass() {
+        const v = this.selectedSite.siteRecommendation || '';
+        if (v === 'Recommended')     return 'scorecard-verdict verdict-green';
+        if (v === 'Possible')        return 'scorecard-verdict verdict-amber';
+        return 'scorecard-verdict verdict-red';
     }
 }
