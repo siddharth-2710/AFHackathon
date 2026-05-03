@@ -1,4 +1,4 @@
-public with sharing class FindBlindSpots {
+public without sharing class FindBlindSpots {
 
     @InvocableMethod(
         label='Find Blind Spot Locations'

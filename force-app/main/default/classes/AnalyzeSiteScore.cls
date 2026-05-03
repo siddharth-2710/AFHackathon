@@ -1,4 +1,4 @@
-public with sharing class AnalyzeSiteScore {
+public without sharing class AnalyzeSiteScore {
 
     @InvocableMethod(
         label='Analyze Site Score'
