@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Site</fullName>
+    <active>true</active>
+    <description>Proposed store expansion site for demand scoring and analysis</description>
+    <label>Proposed Site</label>
+</RecordType>

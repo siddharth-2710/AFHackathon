@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Use this subagent for any retail expansion analysis — scoring a specific location, finding high-demand areas, identifying blind spots, analyzing competition, or evaluating financial projections.</description>
+    <developerName>p_16jak000001qRYD_Demand_Score_Analysis</developerName>
+    <genAiFunctions>
+        <functionName>Analyze_Site_Score_Flow_179ak000002zwPJ</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Find_Blind_Spots_Flow_179ak000002zwPJ</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user asks to score, evaluate, or analyze a specific location, use Analyze_Site_Score_Flow passing the location name as locationQuery.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user asks about demand scores generally or wants to compare sites, use Find_Blind_Spots_Flow to return ranked high-demand locations.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+        <sortOrder>1</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>p_16jak000001qRYD_Demand_Score_Analysis</localDeveloperName>
+    <masterLabel>Demand Score Analysis</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Analyze retail expansion opportunities by scoring specific locations and identifying high-demand, low-competition sites across India using demand scores, competitor data, and financial projections.</scope>
+</GenAiPlugin>

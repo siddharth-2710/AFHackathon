@@ -1,0 +1,11 @@
+location_name,city,latitude,longitude,footfall_daily_avg,footfall_max_regional,peak_hour_count,date
+Marol Naka Site,Mumbai,19.1136,72.8697,8600,12000,1200,2024-01-15
+Kurla West Junction,Mumbai,19.0726,72.8792,7200,12000,980,2024-01-15
+Andheri Station East,Mumbai,19.1194,72.8472,6800,12000,900,2024-01-15
+Malviya Nagar Crossing,Jaipur,26.8505,75.8035,5100,9000,710,2024-01-15
+C-Scheme Central,Jaipur,26.9124,75.7873,6800,9000,950,2024-01-15
+Vaishali Nagar West,Jaipur,26.9154,75.7377,4200,9000,580,2024-01-15
+Koramangala 5th Block,Bangalore,12.9352,77.6245,9200,13000,1380,2024-01-15
+HSR Layout Sector 2,Bangalore,12.9116,77.6389,8600,13000,1250,2024-01-15
+Indiranagar 100ft Road,Bangalore,12.9719,77.6412,7800,13000,1100,2024-01-15
+Whitefield Main Road,Bangalore,12.9698,77.7499,6200,13000,880,2024-01-15

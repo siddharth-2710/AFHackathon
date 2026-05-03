@@ -1,0 +1,11 @@
+Name,City__c,Demand_Score__c,Competitor_Density__c,Projected_Revenue__c,Estimated_Setup_Cost__c,Payback_Period_Years__c,Nearest_Competitor_Dist_M__c,Site_Recommendation__c,RecordTypeId
+Marol Naka Site,Mumbai,87.4,Low,2185000,52000000,2.3,2800,Recommended,012ak00000AxB6XAAV
+Kurla West Junction,Mumbai,71.2,Medium,1780000,48000000,3.1,820,Recommended,012ak00000AxB6XAAV
+Andheri Station East,Mumbai,65.8,High,1320000,45000000,4.2,380,Possible,012ak00000AxB6XAAV
+Malviya Nagar Crossing,Jaipur,79.1,Low,1640000,38000000,2.7,3200,Recommended,012ak00000AxB6XAAV
+C-Scheme Central,Jaipur,68.3,Medium,1290000,36000000,3.4,1100,Recommended,012ak00000AxB6XAAV
+Vaishali Nagar West,Jaipur,55.6,High,890000,34000000,4.8,420,Possible,012ak00000AxB6XAAV
+Koramangala 5th Block,Bangalore,91.2,Low,2750000,58000000,2.1,3800,Recommended,012ak00000AxB6XAAV
+HSR Layout Sector 2,Bangalore,82.7,Low,2210000,54000000,2.5,2900,Recommended,012ak00000AxB6XAAV
+Indiranagar 100ft Road,Bangalore,74.4,Medium,1890000,50000000,3.0,950,Recommended,012ak00000AxB6XAAV
+Whitefield Main Road,Bangalore,61.1,High,1150000,47000000,4.5,310,Possible,012ak00000AxB6XAAV

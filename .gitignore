@@ -1,0 +1,4 @@
+.sfdx/
+node_modules/
+.env
+.vscode/

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when the user requests ranking of potential retail sites based on strategic metrics such as demand, demographics, competition, and ROI.</description>
+    <developerName>p_16jak000001qRYD_Location_Prioritization</developerName>
+    <genAiFunctions>
+        <functionName>Sales__PrioritizeOpportunities</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>AutoGenAi__SummarizeCustomerAccount</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user requests location prioritization, use Sales__PrioritizeOpportunities.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user wants a summary of prioritized locations, use AutoGenAi__SummarizeCustomerAccount.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>p_16jak000001qRYD_Location_Prioritization</localDeveloperName>
+    <masterLabel>Location Prioritization</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only rank potential retail locations based on strategic metrics such as demand scores, demographic alignment, competitor presence, and ROI. You are not responsible for performing individual analyses of these metrics.</scope>
+</GenAiPlugin>

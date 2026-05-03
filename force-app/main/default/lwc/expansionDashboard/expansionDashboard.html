@@ -1,0 +1,86 @@
+<template>
+  <lightning-card>
+    <div slot="title">
+      <span style="font-size:1.1rem;font-weight:500;">Store Expansion Intelligence Dashboard</span>
+    </div>
+    <div slot="actions">
+      <lightning-button-group>
+        <lightning-button label="Refresh Scores" variant="neutral" onclick={refreshData}></lightning-button>
+      </lightning-button-group>
+    </div>
+
+    <div class="slds-p-horizontal_medium">
+
+      <!-- Filters row -->
+      <div class="slds-grid slds-gutters slds-m-bottom_medium slds-m-top_small">
+        <div class="slds-col slds-size_1-of-3">
+          <lightning-combobox
+            label="Filter by City"
+            value={selectedCity}
+            options={cityOptions}
+            onchange={handleCityChange}>
+          </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+          <lightning-input
+            type="range"
+            label={sliderLabel}
+            min="0" max="100" step="5"
+            value={minScore}
+            onchange={handleScoreFilter}>
+          </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-3">
+          <lightning-combobox
+            label="Competition Level"
+            value={selectedCompetition}
+            options={competitionOptions}
+            onchange={handleCompetitionChange}>
+          </lightning-combobox>
+        </div>
+      </div>
+
+      <!-- KPI cards -->
+      <div class="slds-grid slds-gutters slds-m-bottom_medium">
+        <template for:each={kpiCards} for:item="kpi">
+          <div key={kpi.id} class="slds-col slds-size_1-of-4">
+            <div class={kpi.cssClass}>
+              <p class="kpi-number">{kpi.value}</p>
+              <p class="kpi-label">{kpi.label}</p>
+              <p class="kpi-sub">{kpi.sub}</p>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- Chart -->
+      <div class="slds-m-bottom_medium" style="position:relative;height:340px;">
+        <template if:true={isLoading}>
+          <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+        </template>
+        <canvas lwc:ref="chartCanvas" style="width:100%;height:340px;"></canvas>
+      </div>
+
+      <!-- Legend -->
+      <div class="slds-grid slds-gutters slds-m-bottom_medium" style="font-size:0.8rem;">
+        <div class="slds-col"><span style="color:#1D9E75;font-weight:600;">&#9679; Low competition</span> &mdash; nearest rival &gt;2km</div>
+        <div class="slds-col"><span style="color:#BA7517;font-weight:600;">&#9679; Medium competition</span> &mdash; 500m&ndash;2km</div>
+        <div class="slds-col"><span style="color:#A32D2D;font-weight:600;">&#9679; High competition</span> &mdash; &lt;500m</div>
+        <div class="slds-col" style="color:#888;">Bubble size = projected monthly revenue</div>
+      </div>
+
+      <!-- Data table -->
+      <lightning-datatable
+        key-field="siteId"
+        data={filteredSites}
+        columns={columns}
+        sorted-by={sortBy}
+        sorted-direction={sortDirection}
+        onsort={handleSort}
+        onrowaction={handleRowAction}
+        hide-checkbox-column>
+      </lightning-datatable>
+
+    </div>
+  </lightning-card>
+</template>

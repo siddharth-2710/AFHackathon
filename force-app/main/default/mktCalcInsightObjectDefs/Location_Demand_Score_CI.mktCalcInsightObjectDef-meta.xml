@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT
+    Footfall_DMO__dlm.location_name__c AS location_name__c,
+    Footfall_DMO__dlm.city__c          AS city__c,
+    MAX(Footfall_DMO__dlm.footfall_daily_avg__c) / MAX(Footfall_DMO__dlm.footfall_max_regional__c) * 50
+        + MAX(Demographic_DMO__dlm.annual_growth_rate_pct__c) * 0.3
+        - MIN(Competitor_DMO__dlm.distance_to_nearest_site_m__c) / MAX(Competitor_DMO__dlm.max_regional_competitors__c) / 500 * 20
+        AS demand_score__c,
+    MIN(Competitor_DMO__dlm.distance_to_nearest_site_m__c) AS nearest_competitor_dist_m__c,
+    MAX(Demographic_DMO__dlm.annual_growth_rate_pct__c)    AS demo_growth_rate__c,
+    MAX(Footfall_DMO__dlm.footfall_daily_avg__c) / MAX(Footfall_DMO__dlm.footfall_max_regional__c) AS footfall_index_norm__c
+FROM Footfall_DMO__dlm
+INNER JOIN Demographic_DMO__dlm ON Footfall_DMO__dlm.location_name__c = Demographic_DMO__dlm.location_name__c
+INNER JOIN Competitor_DMO__dlm  ON Footfall_DMO__dlm.city__c = Competitor_DMO__dlm.city__c
+GROUP BY
+    Footfall_DMO__dlm.location_name__c,
+    Footfall_DMO__dlm.city__c</expression>
+    <masterLabel>Location_Demand_Score_CI</masterLabel>
+</MktCalcInsightObjectDef>
